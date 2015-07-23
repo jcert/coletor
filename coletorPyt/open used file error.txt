@@ -1,0 +1,13 @@
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "D:\Python27-32\lib\threading.py", line 551, in __bootstrap_inner
+    self.run()
+  File "D:\Python27-32\lib\threading.py", line 504, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "C:\Users\Jair\Desktop\pro\coletor\setup.py", line 137, in dataHandle
+    doDataMagic(iBuffer)#if data, turns into .csv. if other, print to screen
+  File "C:\Users\Jair\Desktop\pro\coletor\setup.py", line 80, in doDataMagic
+    vectorToCSV(leituras)
+  File "C:\Users\Jair\Desktop\pro\coletor\setup.py", line 87, in vectorToCSV
+    with open(sensor+'.csv','ab')as f:
+IOError: [Errno 13] Permission denied: '10.csv'
